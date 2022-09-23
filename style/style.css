@@ -1,0 +1,677 @@
+/* CSS reset
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CSS reset обнуление стилей
+*/
+
+
+/* navigation header
+*/
+header{
+    vertical-align:middle;
+    align-items: center;
+    min-height: 45px;
+    padding-left: 75px;
+    padding-top: 55px;
+    padding-right: 85px; 
+    padding-bottom: 55px;
+}
+.nav-header ul li{
+    display: inline; 
+}
+
+.header_textlogo{
+    float: left;
+    display: inline;
+    align-items: center;
+}
+
+.logo{
+    float: left;
+}
+
+.header_text_logo_cont{
+    padding-top: 12px;
+    float: left;
+    vertical-align:middle;
+    text-align:center;
+}
+
+
+.header_logo{ 
+    display: inline-block;
+    font-family: 'Roboto';
+    font-style: normal;
+    margin-left: 11px;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.2em;
+    color: #FFFFFF;
+    opacity: 0.9;
+}
+.nav-header{
+    vertical-align: middle;
+    min-height: 45px;
+}
+
+.nav_link{
+    display: inline-block;
+    vertical-align: middle;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 0.2s linear;  
+    margin-right: 33px;
+    margin-left: 33px;
+    min-height: 45px;
+    padding-top: 12px;
+}
+
+.nav_link:hover{
+    color: beige;
+}
+
+#menu{
+    display: none;
+}
+.nav-header{
+    margin-left: 35%;
+}
+
+/* Media for icon apear */
+@media screen and (max-width:1380px){
+    .nav_link{
+        display: none;
+    }
+    #menu{
+        float: right;
+        display: block;
+        color: #FFFFFF;
+        font-size: 25px;
+        margin-right: 0px;
+        
+    }
+}
+
+/* Main block of headpage*/
+
+.main_middle{
+    height: 305px;
+    padding-top: 9%;
+    padding-bottom: 180px;
+    width: 100%;
+}
+
+.social_link{
+    float: left;
+    display:grid;
+    margin-left: 4%;
+    align-items: initial;
+    padding-left:0;
+    padding-top:100px;
+    padding-bottom:100px;
+}
+
+.norway-title{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    }
+
+h1{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 250px;
+    line-height: 305px;
+    background: linear-gradient(47.06deg, #000000 -3.87%, rgba(255, 255, 255, 0) 36.89%), #FFFFFF;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.explore{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -40px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    letter-spacing: 0.55em;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.scroll{
+    float: right;
+    margin-right: 4%;
+    padding:20px
+}
+
+
+/* Navigation links bottom*/
+
+.nav_container{
+    position: relative;
+    width: 100%;
+    height: 108px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.bottom_nav{
+    padding-left:300px;
+    padding-right: 300px;
+    display: inline-block;
+}
+.nav_link_bottom *{
+    position: relative;
+}
+
+.nav_link_bottom{ 
+    float: left;
+    align-items: center;
+    margin: auto;
+    height: 108px;
+    width: 417px;
+    box-shadow: 1px 1px 4px rgb(14,14,14, 0.3);
+    border: 1px;
+    border-radius: 5px;
+    background:inherit;
+    text-align:center;
+    vertical-align: middle;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 0.2s linear;
+}
+
+.nav_link_bottom:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: inherit;
+    filter: blur(10px);
+    filter: url(#blur);
+}
+
+.nav_link_bottom:hover{
+    color: beige;
+}
+
+.nav_plan_trip{
+    margin-top: 4px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    opacity: 0.4;
+}
+
+/* Navigation links bottom*/
+
+
+.container_section{  
+    min-height: 850px;
+    padding-top: 150px;
+    padding-bottom: 200px;
+    padding-left: 110px;
+    padding-right: 110px;
+    
+}
+.container_photo{
+    width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container_photo_text{
+    float: left;
+    position: relative;
+}
+
+.imgphoto{
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.act_pfoto_text{
+    position: absolute;
+    bottom: 80px;
+    left: 50px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    color: #FFFFFF;
+}
+
+.act_numb{
+    position: absolute;
+    bottom: 40px;
+    left: 50px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* titiles of chapters*/
+
+.chapter_title{
+    clear: both;
+    vertical-align: middle;
+    text-align: center;
+    font-family: 'Montserrat'; 
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.7em;
+    color: #474747;
+}
+
+
+.chapter_title_bot{
+    margin-top: 27px;
+    margin-bottom: 111px;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 56px;
+    color: #2D2D2D;
+}
+
+/* titiles of chapters*/
+
+
+/* section about us*/
+
+.container_aboutus{
+    padding-left: 222px;
+    padding-right: 222px;
+    padding-bottom: 0px;
+}
+
+h3{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    text-transform: capitalize;
+    color: #3D3D3D;
+}
+h3 span{
+    margin-right: 40px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 32px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #9B9B9B;
+}
+
+.aboutus_discript{  
+    margin-top: 20px;
+    margin-left: 80px;
+    margin-bottom: 50px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    text-transform: lowercase;
+    color: #6D6D6D;
+}
+
+
+.photo_aboutus{
+    float: left;
+    padding-right: 90px;
+    
+}
+
+.container_aboutus_botinfo{
+    padding-left: 93px;
+    padding-bottom: 190px;
+}
+
+
+
+
+.beauties_container{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.ways_container{
+    clear: both;
+    width: 1700px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 100px;
+    background-color: #F4F4F4;
+}
+
+.ways_photo{
+
+    background: inherit;
+    float: left;
+    padding-left: 20px ;
+    padding-top: 44px;
+    padding-right: 20px;
+    padding-bottom: 100px;
+}
+
+.city_title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.span_price{
+    margin-top: 14px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #959595;
+}
+
+.dlp{
+    padding-top: 100px;
+    width: 1600px;
+    float: left;
+}
+.form_obj{
+    width: 1200px;
+}
+.network{
+    margin-top: 280px;
+}
+
+.but_search{
+    float: right;
+    padding-left: 79px;
+    padding-top: 27px;
+    padding-right: 79px;
+    padding-bottom: 27px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 5px;
+    color: #FFFFFF;
+    background: #3D3D3D;
+    border-radius: 5px
+}
+.partner{
+    width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.partner_logos{    
+    margin-bottom: 150px;
+    margin-left: 50px;
+    margin-right: 50px;
+
+    letter-spacing: 0;
+    vertical-align: middle;
+}
+
+.reviews{
+    background-image: url(/img/maskgorup.png);
+    background-size: cover;
+    width: 1660px;
+    height: 544px;
+    margin-bottom: 220px;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+
+.people_rev{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.peoplerev_textphoto{
+    margin-top: 140px;
+    margin-left: 25px;
+    margin-right: 25px;
+    min-height: 300px;
+    width: 350px;
+    float: left;
+}
+
+.rev_cloud{ position: relative;
+    min-height: 200px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    
+}
+.text_box{
+    border-radius: 10px;;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 20px;
+    font-feature-settings: 'liga' off;
+    color: #474747;
+    padding-left: 37px;
+    padding-right: 12px;
+}
+
+.item{
+    padding-left: 47px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 98px;
+    font-feature-settings: 'liga' off;
+    color: #FF9921;
+    opacity: 0.4;
+}
+
+
+.rev_cloud p{
+    padding-left: 20px;
+}
+
+.peoplerev_textphoto img{
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    float: left;
+}
+
+.name_pers{
+    padding-top: 20px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    font-feature-settings: 'liga' off;
+    color: #FFFFFF;
+}
+
+.department{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    opacity: 0.7;
+    line-height: 24px;
+    font-feature-settings: 'liga' off;
+    color: #FFFFFF;
+}
+
+
+
+
+/* footer */
+
+
+footer{
+    padding-bottom: 50px;
+    background-color: #F4F4F4;
+}
+
+.footer_logo{
+    padding-top: 140px;
+}
+
+.footer_logo img{
+    background: #000000;
+    border-radius:50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer_logo p{
+    padding-top: 20px;
+    display: block;
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.25em;
+    color: #000000;
+    opacity: 0.9;
+}
+
+.nav_con_footer{
+    width: 900px;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 67px;
+    border-bottom: solid 1px ;
+}
+.nav-footer ul li{ 
+    display: inline;
+
+}
+
+.nav-footer ul li a{
+width: 74px;
+height: 22px;
+left: 1069px;
+top: 6046px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 22px;
+color: #6D6D6D;
+text-decoration: none;
+padding-left: 30px;
+padding-right: 30px;
+}
+
+.nav-footer ul li a:hover{
+    color: rgb(180, 180, 39);
+}
+.bottom_footer{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1500px;
+    padding-top: 65px;
+}
+.copy{ 
+    width: 300px;
+    float: left;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    font-feature-settings: 'liga' off;
+    color: #6D6D6D;
+}
+
+.nav_sociallink_footer{
+    float: right;
+}
